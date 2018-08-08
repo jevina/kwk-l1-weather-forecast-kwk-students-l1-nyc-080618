@@ -19,7 +19,7 @@ location(weather)
 # 2. Using the location method as a guide, write a  method called "description" so it returns the description from the weather hash. 
 
 def description(weather)
-  puts weather[:description]
+  return weather[:description]
 end
 
 description(weather)
@@ -27,17 +27,13 @@ description(weather)
 # 3. Using the methods above and string interpolation, update the method below so that it returns a string that describes the current weather - for example: "The weather in New York is Partly Cloudy. The temperature is 66.1 degrees Farenheit." HINT: the method should RETURN the string, not print it to the terminal. 
 
 def temperature(weather)
-  puts weather[:temperature_farenheit]
+  return weather[:temperature_farenheit]
 end
 
 temperature(weather)
 
 def help(weather)
-  location = location(weather)
-  description = description(weather)
-  temperature = temperature(weather)
-  puts "The weather in #{location} is #{description}."
-  puts "The temperature is #{temperature} degrees Farenheit."
+  puts "The weather in #{loction(weather)} is #{description(weather)}. The temperature is #{temperature(weather)} degrees Farenheit."
 end
 
 help(weather)
