@@ -33,7 +33,9 @@ end
 temperature(weather)
 
 def help(weather)
-  puts "The weather in #{location(weather)} is #{description(weather)}."
+  location = location(weather)
+  description = 
+  puts "The weather in #{location} is #{description(weather)}."
   puts "The temperature is #{temperature(weather)} degrees Farenheit."
 end
 
