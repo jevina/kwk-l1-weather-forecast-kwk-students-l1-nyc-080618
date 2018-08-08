@@ -3,7 +3,7 @@
 weather = {
 	:city => "New York",
 	:description => "Partly Cloudy",
-	:temperature_farenheit => 66.3
+	:temperature_farenheit => "75" 
 }
 
 # puts weather[:city]
@@ -32,7 +32,7 @@ end
 
 temperature(weather)
 
-def help(weather)
+def weather_report(weather)
   return "The weather in #{location(weather)} is #{description(weather)}. The temperature is #{temperature(weather)} degrees Farenheit."
 end
 
